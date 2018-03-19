@@ -1,0 +1,24 @@
+int c, d, k;
+double r;
+bool f;
+
+def main (int a) : int
+{
+	int x = 324 + 4 + a / 3;
+	x = func(x);
+    if(x == 2234)
+    {
+        x = a + func(x);
+    }
+
+	return x;
+}
+
+def func (int d) : int {
+	if (d > 100) {
+		return 10;
+	}
+	int a = d * 3;
+	a = func(a);
+	return a;
+}
