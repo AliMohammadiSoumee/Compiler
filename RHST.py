@@ -31,9 +31,10 @@ class RHST :
 			
 		print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FOLLOW & FIRST^^^^^^^^^^^^^^^^^^^^^')
 		for name in self.non_terminals :
-			print(name, self.non_terminals[name].get_follow())
-			print(name, self.non_terminals[name].get_first())
-		print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
+                        print(name)
+                        print("follows:  ", self.non_terminals[name].get_follow())
+                        print("firsts:  ", self.non_terminals[name].get_first())
+                        print("---------------------------------")
 
 		print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Predict^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
 		for name in self.table :
